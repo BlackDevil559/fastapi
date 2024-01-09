@@ -6,7 +6,6 @@ from datagovindia import DataGovIndia
 from urllib.parse import parse_qs
 import json
 datagovin = DataGovIndia(DATAGOVINDIA_API_KEY)
-datagovin.sync_metadata()
 app =FastAPI()
 origins = ["http://localhost:5173"]
 app.add_middleware(
